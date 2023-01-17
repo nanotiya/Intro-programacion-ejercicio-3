@@ -1,0 +1,25 @@
+public class MyClass {
+    public static void main (String args[]) {
+        MyClass clase = new MyClass();
+        System.out.println("El resultado es"+ clase.sumar(2,3,4));
+        
+        Coche coche= new Coche();
+        coche.sumarPuertas();
+        System.out.println("El coche tiene"+ coche.numPuertas + "puertas");
+        
+    
+    }
+int sumar(int num1, int num2, int num3){
+    return num1+num2+num3;
+}
+
+
+}
+
+class Coche {
+    int numPuertas=2;
+    
+    public void sumarPuertas(){
+        this.numPuertas++;
+    }
+}
